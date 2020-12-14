@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+	
+<head>
+	
+	<meta charset="utf-8">
+	
+	<title>Haley Frisch 3D Modeling</title>
+	
+	<link href="css/portfolio.css" type="text/css" rel="stylesheet">
+	
+	<link href="Index.html" type="text/css" rel="stylesheet">
+	
+	<link href="Layout.html" type="text/css" rel="stylesheet">
+	
+	<link href="Web_Design.html" type="text/css" rel="stylesheet">
+	
+	<link href="Photography.html" type="text/css" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap" rel="stylesheet">	
+	
+</head>
+
+	
+<body>
+	
+		
+	<a href="Index.html"><img class="home_smaller" src="images/me.png" alt="A picture of Haley Frisch"></a>
+	<a class="name_link" href="Index.html">Haley Frisch</a>
+		
+	<p class="category">3D Modeling</p>
+	<p class="category_software">Main software used: Newtek Lightwave Modeler and Newtek Lightwave Layout</p>	
+	
+	<div class="header">
+			<ul> 
+				<li><a href="Web_Design.html">Web Design</a></li>
+				<li><a href="Layout.html">Layout</a></li>
+				<li class="active"><a href="3D_Modeling.html">3D Modeling</a></li>
+				<li><a href="Photography.html">Illustration and Photography</a></li>
+			</ul>
+	</div>
+
+	
+	<p class="project">Point of Sale Display</p>
+	<p class="description">Motogyro is a motorsports camera brand that I created for class. The gyroscopic design stabilizes the camera while the rider has it on their helmet. For the trademark, I create a silhouette of two motorcycle helmets next to eachother. The shape of the design is also a play on the gyroscopic design of the product. I incorporated the trademark into the display by making it the side supports.</p>
+	
+	<div class="slideshow-container">
+		<div class="mySlides1">
+			<img src="images/motogyro1.jpg" style="width:100%" alt="">
+		</div>
+		<div class="mySlides1">
+			<img src="images/motogyro2.jpg" style="width:100%" alt="">
+		</div>
+		<div class="mySlides1">
+			<img src="images/motogyro3.jpg" style="width:100%" alt="">
+		</div>
+		<div class="mySlides1">
+			<img src="images/motogyro4.jpg" style="width:100%" alt="">
+		</div>
+		<div class="mySlides1">
+			<img src="images/motogyro5.jpg" style="width:100%" alt="">
+		</div>
+
+		  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+	</div>
+	
+	<br/>
+	
+	
+	
+	<p class="project">3D Room</p>
+	<p class="description">For this project, I had to create a table, lamp, and clock. I decided to show the complexity of my modeling by doing organic shapes.</p>
+	
+	<div class="slideshow-container">
+		<div class="mySlides2">
+			<img src="images/lamp (1).png" style="width:100%" alt="">
+		</div>
+		<div class="mySlides2">
+			<img src="images/lamp (3).png" style="width:100%" alt="">
+		</div>
+		<div class="mySlides2">
+			<img src="images/lamp (6).png" style="width:100%" alt="">
+		</div>
+		<div class="mySlides2">
+			<img src="images/lamp (7).png" style="width:100%" alt="">
+		</div>
+		<div class="mySlides2">
+			<img src="images/lamp (8).png" style="width:100%" alt="">
+		</div>
+		
+		  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+	</div>
+		<br>
+	
+	<p class="project">Steampunk Vehicle</p>
+	<p class="description">Challenged to create a steampunk themed vehicle, I decided to do a cheetah bike. I chose to make this vehicle bare minimum, so it seemed like it was made from scrap metal.</p>
+	
+	<div class="slideshow-container">
+		<div class="mySlides3">
+			<img src="images/steampunk (1).jpg" style="width:100%" alt="">
+		</div>
+		<div class="mySlides3">
+			<img src="images/steampunk (2).jpg" style="width:100%" alt="">
+		</div>
+		<div class="mySlides3">
+			<img src="images/steampunk (3).jpg" style="width:100%" alt="">
+		</div>
+		<div class="mySlides3">
+			<img src="images/steampunk (4).jpg" style="width:100%" alt="">
+		</div>
+		
+		  <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+	</div>
+		<br>
+	
+	
+<script>
+	
+	var slideIndex = [1,1,1];
+	
+	var slideId = ["mySlides1", "mySlides2", "mySlides3"]
+	showSlides(1, 0);
+	showSlides(1, 1);
+	showSlides(1, 2);
+
+	function plusSlides(n, no) {
+	  showSlides(slideIndex[no] += n, no);
+	}
+
+	function showSlides(n, no) {
+	  var i;
+	  var x = document.getElementsByClassName(slideId[no]);
+	  if (n > x.length) {slideIndex[no] = 1}
+	  if (n < 1) {slideIndex[no] = x.length}
+	  for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+	  }
+		console.log(x);
+		console.log(slideIndex);
+		console.log(no);
+	  x[slideIndex[no]-1].style.display = "block";
+	}
+	
+</script>
+	
+		<div class="footer">
+			<ul> 
+				<li><a href="Web_Design.html">Web Design</a></li>
+				<li><a href="Layout.html">Layout</a></li>
+				<li><a href="3D_Modeling.html">3D Modeling</a></li>
+				<li><a href="Photography.html">Illustration and Photography</a></li>
+				<li><a href="Index.html">About Me</a></li>
+			</ul>
+		
+			<p class="footer_text">Haley Frisch Online Portfolio</p>
+	</div>
+	
+	
+</body>
+	
+	
+</html>

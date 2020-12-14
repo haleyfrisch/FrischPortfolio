@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	
+	<title>Haley Frisch Photography</title>
+	
+	<link href="css/portfolio.css" type="text/css" rel="stylesheet">
+	
+	<link href="Index.html" type="text/css" rel="stylesheet">
+	
+	<link href="Layout.html" type="text/css" rel="stylesheet">
+	
+	<link href="3D_Modeling.html" type="text/css" rel="stylesheet">
+	
+	<link href="Web_Design.html" type="text/css" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap" rel="stylesheet">
+	
+</head>
+
+	
+<body>
+	
+		
+	<a href="Index.html"><img class="home_smaller" src="images/me.png" alt="A picture of Haley Frisch"></a>
+	<a class="name_link" href="Index.html">Haley Frisch</a>
+		
+	<p class="category">Illustration and Photography</p>
+	<p class="category_software">Main software used: Adobe Illustrator, Adobe Lightroom, Adobe Photoshop</p>	
+	
+	<div class="header">
+			<ul> 
+				<li><a href="Web_Design.html">Web Design</a></li>
+				<li><a href="Layout.html">Layout</a></li>
+				<li><a href="3D_Modeling.html">3D Modeling</a></li>
+				<li class="active"><a href="Photography.html">Illustration and Photography</a></li>
+			</ul>
+	</div>
+
+	
+	<p class="project">Haiku Illustration</p>
+	<p class="description">Given a sheet of haiku poems, I had to choose three and create abstract illustrations for them. They were meant to be able to stand alone, while also looking well together.</p>
+	
+	<div class="slideshow-container">
+		<div class="mySlides1">
+			<img src="images/haiku (1).jpg" style="width:100%" alt="">
+		</div>
+		<div class="mySlides1">
+			<img src="images/haiku (2).jpg" style="width:100%" alt="">
+		</div>
+		<div class="mySlides1">
+			<img src="images/haiku (3).jpg" style="width:100%" alt="">
+		</div>
+		<div class="mySlides1">
+			<img src="images/haiku (4).jpg" style="width:100%" alt="">
+		</div>
+		
+		  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+	</div>
+	
+	<br/>
+	
+	
+	
+	<p class="project">Song Title Project</p>
+	<p class="description">For this project, I was challenged to create posters passed off of ZZ Top song titles. We were not allowed to listen to the songs until after the project.</p>
+	
+	<div class="slideshow-container">
+		<div class="mySlides2">
+			<img src="images/i_thank_you.jpg" style="width:100%" alt="">
+		</div>
+		<div class="mySlides2">
+			<img src="images/hot_blue_righteous.jpg" style="width:100%" alt="">
+		</div>
+		<div class="mySlides2">
+			<img src="images/two_ways_to_play.jpg" style="width:100%" alt="">
+		</div>
+	
+		
+		  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+	</div>
+		<br>
+	
+	<p class="project">Car Illustrations</p>
+	<p class="description">I asked friends to send me pictures of their cars to create vector illustrations or on Illustrator. These were the results.</p>
+	
+	<div class="slideshow-container">
+		<div class="mySlides3">
+			<img src="images/car (1).jpg" style="width:100%" alt="">
+		</div>
+		<div class="mySlides3">
+			<img src="images/car (2).jpg" style="width:100%" alt="">
+		</div>
+		<div class="mySlides3">
+			<img src="images/car (3).jpg" style="width:100%" alt="">
+		</div>
+		<div class="mySlides3">
+			<img src="images/car (4).jpg" style="width:100%" alt="">
+		</div>
+		
+		  <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+	</div>
+		<br>
+	
+	
+<script>
+	
+	var slideIndex = [1,1,1];
+	
+	var slideId = ["mySlides1", "mySlides2", "mySlides3"]
+	showSlides(1, 0);
+	showSlides(1, 1);
+	showSlides(1, 2);
+
+	function plusSlides(n, no) {
+	  showSlides(slideIndex[no] += n, no);
+	}
+
+	function showSlides(n, no) {
+	  var i;
+	  var x = document.getElementsByClassName(slideId[no]);
+	  if (n > x.length) {slideIndex[no] = 1}
+	  if (n < 1) {slideIndex[no] = x.length}
+	  for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+	  }
+		console.log(x);
+		console.log(slideIndex);
+		console.log(no);
+	  x[slideIndex[no]-1].style.display = "block";
+	}
+	
+</script>
+	
+		<div class="footer">
+			<ul> 
+				<li><a href="Web_Design.html">Web Design</a></li>
+				<li><a href="Layout.html">Layout</a></li>
+				<li><a href="3D_Modeling.html">3D Modeling</a></li>
+				<li><a href="Photography.html">Illustration and Photography</a></li>
+				<li><a href="Index.html">About Me</a></li>
+			</ul>
+		
+			<p class="footer_text">Haley Frisch Online Portfolio</p>
+	</div>
+	
+	
+</body>
+	
+	
+</html>
